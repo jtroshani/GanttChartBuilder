@@ -6,7 +6,7 @@
       id: "website-redesign",
       name: "Website Redesign",
       category: "Marketing + Product",
-      accent: "#0f7f6d",
+      accent: "#0033A1",
       projectName: "Atlas Website Redesign",
       projectSummary: "A full website refresh covering discovery, design, development, content migration, and launch readiness.",
       tasks: [
@@ -23,7 +23,7 @@
       id: "product-launch",
       name: "Product Launch",
       category: "Go-to-Market",
-      accent: "#d85d2f",
+      accent: "#FFB71B",
       projectName: "Product Launch",
       projectSummary: "A go-to-market rollout covering research, messaging, campaign production, sales enablement, and launch execution.",
       tasks: [

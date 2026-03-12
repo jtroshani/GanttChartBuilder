@@ -148,10 +148,10 @@
     var frameStyle = window.getComputedStyle(frame);
     var width = shellWidth + (exportPadding * 2);
     var height = contentHeight + (exportPadding * 2) + footerOffset + footerSpace;
-    var exportBackground = "#eef3fb";
-    var headerBandColor = "#1a48c2";
-    var frameBackground = frameStyle.backgroundColor || "#ffffff";
-    var frameBorder = frameStyle.borderColor || "#d7e1ef";
+    var exportBackground = "#FFFFFF";
+    var headerBandColor = "#0033A1";
+    var frameBackground = frameStyle.backgroundColor || "#FFFFFF";
+    var frameBorder = frameStyle.borderColor || "#D9E4F3";
     var radius = Math.max(parseRadius(frameStyle.borderRadius), 18);
     var footerText = "Downloaded " + formatExportDate(new Date());
     var footerY = exportPadding + contentHeight + footerOffset + footerFontSize;
@@ -160,10 +160,10 @@
       "<defs>",
       '<clipPath id="chartFrameClip" clipPathUnits="userSpaceOnUse"><rect x="' + String(frameBox.x) + '" y="' + String(frameBox.y) + '" width="' + String(frameWidth) + '" height="' + String(frameHeight) + '" rx="' + String(radius) + '" ry="' + String(radius) + '"/></clipPath>',
       '<filter id="panelShadow" x="-12%" y="-12%" width="124%" height="140%">',
-      '<feDropShadow dx="0" dy="16" stdDeviation="14" flood-color="#0f172a" flood-opacity="0.08"/>',
+      '<feDropShadow dx="0" dy="16" stdDeviation="14" flood-color="#011949" flood-opacity="0.08"/>',
       "</filter>",
       '<filter id="taskBarShadow" x="-20%" y="-40%" width="160%" height="200%">',
-      '<feDropShadow dx="0" dy="10" stdDeviation="8" flood-color="#0f172a" flood-opacity="0.18"/>',
+      '<feDropShadow dx="0" dy="10" stdDeviation="8" flood-color="#011949" flood-opacity="0.18"/>',
       "</filter>",
       "</defs>",
       '<rect x="0" y="0" width="' + String(width) + '" height="' + String(height) + '" fill="' + exportBackground + '"/>',
@@ -260,7 +260,7 @@
 
     parts.push("</g>");
     parts.push(
-      '<text x="' + String(width - exportPadding) + '" y="' + String(footerY) + '" fill="#5b6980" font-family="Avenir Next, Segoe UI, Helvetica Neue, sans-serif" font-size="' + String(footerFontSize) + '" font-weight="600" text-anchor="end" dominant-baseline="middle">' + utils.escapeHtml(footerText) + "</text>"
+      '<text x="' + String(width - exportPadding) + '" y="' + String(footerY) + '" fill="#688197" font-family="Avenir Next, Segoe UI, Helvetica Neue, sans-serif" font-size="' + String(footerFontSize) + '" font-weight="600" text-anchor="end" dominant-baseline="middle">' + utils.escapeHtml(footerText) + "</text>"
     );
     parts.push("</svg>");
 
@@ -286,11 +286,11 @@
     var scaleY = box.height / 56;
     parts.push(
       '<g transform="translate(' + String(roundValue(box.x)) + " " + String(roundValue(box.y)) + ") scale(" + String(roundValue(scaleX)) + " " + String(roundValue(scaleY)) + ')">',
-      '<rect x="3" y="3" width="50" height="50" rx="14" fill="#173CA4"/>',
-      '<rect x="12" y="14" width="16" height="7" rx="3.5" fill="#ffffff"/>',
-      '<rect x="18" y="25" width="20" height="7" rx="3.5" fill="#9EC0FF"/>',
-      '<rect x="28" y="36" width="16" height="7" rx="3.5" fill="#ffffff"/>',
-      '<path d="M17 17.5H18.5V28.5H30V39.5H31.5" stroke="#6F94E9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>',
+      '<rect x="3" y="3" width="50" height="50" rx="14" fill="#0033A1"/>',
+      '<rect x="12" y="14" width="16" height="7" rx="3.5" fill="#FFFFFF"/>',
+      '<rect x="18" y="25" width="20" height="7" rx="3.5" fill="#FFFFFF"/>',
+      '<rect x="28" y="36" width="16" height="7" rx="3.5" fill="#FFFFFF"/>',
+      '<path d="M17 17.5H18.5V28.5H30V39.5H31.5" stroke="#FFB71B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>',
       "</g>"
     );
   }

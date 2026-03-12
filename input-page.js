@@ -2,7 +2,7 @@
   var builder = window.GanttChartBuilder = window.GanttChartBuilder || {};
   var utils = builder.utils;
   var storage = builder.storage;
-  var DEFAULT_ACCENT = "#1f4fd7";
+  var DEFAULT_ACCENT = "#0033A1";
   var DEFAULT_PRODUCT_SUMMARY = "A go-to-market rollout covering research, messaging, campaign production, sales enablement, and launch execution.";
 
   document.addEventListener("DOMContentLoaded", function () {

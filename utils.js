@@ -155,7 +155,7 @@
     }
 
     if (color.length !== 6) {
-      return "#ffffff";
+      return "#FFFFFF";
     }
 
     var red = parseInt(color.slice(0, 2), 16);
@@ -163,7 +163,7 @@
     var blue = parseInt(color.slice(4, 6), 16);
     var brightness = ((red * 299) + (green * 587) + (blue * 114)) / 1000;
 
-    return brightness > 150 ? "#102231" : "#ffffff";
+    return brightness > 150 ? "#011949" : "#FFFFFF";
   }
 
   builder.utils = {

@@ -2,7 +2,7 @@
   var builder = window.GanttChartBuilder = window.GanttChartBuilder || {};
   var utils = builder.utils;
   var STORAGE_KEY = "gantt-chart-builder.project";
-  var DEFAULT_ACCENT = "#1f4fd7";
+  var DEFAULT_ACCENT = "#0033A1";
   var REMOVED_PRODUCT_SUMMARY = "A coordinated launch sequence for beta readiness, campaign development, and market rollout.";
   var REMOVED_PRODUCT_NAME = "Pulse App Launch Plan";
   var REPLACEMENT_PRODUCT_NAME = "Product Launch";

@@ -41,7 +41,7 @@
     var headerHeight = monthHeaderHeight + intervalHeaderHeight;
     var rowHeight = 96;
     var chartHeight = headerHeight + (parsedTasks.length * rowHeight);
-    var accent = project.accent || "#1f4fd7";
+    var accent = project.accent || "#0033A1";
     var labelColor = utils.pickContrastColor(accent);
 
     container.innerHTML = "";
@@ -411,7 +411,7 @@
       result[element.getAttribute("data-task-id")] = element;
       return result;
     }, {});
-    var strokeColor = accentColor || "#1f4fd7";
+    var strokeColor = accentColor || "#0033A1";
     var tasks = content.querySelectorAll(".task-bar");
 
     while (svg.firstChild) {
